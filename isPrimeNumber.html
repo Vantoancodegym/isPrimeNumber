@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>is prime number</title>
+</head>
+<body>
+<script>
+    function isPrime(number){
+        if (number==2){
+            return 2;
+        }else if (number>2){
+            for (let i=2;i<number;i++){
+                if (number%i==0){
+                    return "";
+                }
+
+            }return number;
+
+        }
+    }
+    function main(){
+        let str = "";
+        for (let n=2;n<10000;n++){
+            if (isPrime(n)!=""){
+            str += isPrime(n) + ";";}
+        }
+        document.write("cac so nguyen to nho hon 10000 la : " + str);
+    }
+    main()
+</script>
+</body>
+</html>
